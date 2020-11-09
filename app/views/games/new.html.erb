@@ -1,0 +1,10 @@
+<h1>Longest Word Game</h1>
+
+<h2>New Game</h2>
+<p><%= @letters%></p>
+
+<form action="/score" method="get">
+<input type="text" name="answer">
+<%= hidden_field_tag :letters, @letters%>
+<input type="submit" value="Calculate!">
+</form>
